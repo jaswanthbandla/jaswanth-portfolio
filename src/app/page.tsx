@@ -131,7 +131,7 @@ export default function Portfolio() {
         <motion.div
           className="w-full h-full bg-cover bg-center md:bg-[center_top]"
           style={{
-            backgroundImage: `url('/hero1.jpg')`,
+            backgroundImage: `url('${process.env.NODE_ENV === "production" ? "/jaswanth-portfolio" : ""}/hero1.jpg')`,
             x: bgMouseX,
             y: bgMouseY,
             scale: scrollBgScale,
@@ -267,7 +267,7 @@ export default function Portfolio() {
               </button>
 
               <a
-                href="/resume.pdf"
+                href={`${process.env.NODE_ENV === "production" ? "/jaswanth-portfolio" : ""}/Jaswanth_Bandla_Resume.pdf`}
                 download="Jaswanth_Bandla_Resume.pdf"
                 className="flex items-center gap-2 px-6 py-3.5 rounded-full border border-white/30 bg-black/60 backdrop-blur-md hover:bg-white/10 hover:border-amber-400 text-white font-medium text-sm transition-colors cursor-pointer shadow-lg"
               >

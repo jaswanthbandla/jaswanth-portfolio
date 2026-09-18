@@ -131,7 +131,7 @@ export default function Portfolio() {
         <motion.div
           className="w-full h-full bg-cover bg-center md:bg-[center_top]"
           style={{
-            backgroundImage: `url('${process.env.NODE_ENV === "production" ? "/jaswanth-portfolio" : ""}/hero1.jpg')`,
+            backgroundImage: "url('/jaswanth-portfolio/hero1.jpg')",
             x: bgMouseX,
             y: bgMouseY,
             scale: scrollBgScale,
